@@ -9,6 +9,10 @@ for (var i = 1; i <= 16; i++) {
   console.log(cpuRandomNumber);
 }
 
+for (var i = 1; i <= 84; i++) {
+  var userNumbers = parseInt(prompt('Inserisci un numero da 1 a 100'));
+  console.log(userNumbers);
+}
 
 
 
