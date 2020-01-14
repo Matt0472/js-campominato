@@ -5,7 +5,7 @@
 // Al termine della partita il software deve comunicare il punteggio, cioè il numero di volte che l’utente ha inserito un numero consentito.
 
 var arrayRandomNumber = [];
-var trovato = false;
+var findNumber = false;
 for (var i = 1; i <= 16; i++) {
   var cpuRandomNumber = getRandomNumber(1, 100);
   arrayRandomNumber.push(cpuRandomNumber);
@@ -20,11 +20,10 @@ for (var j = 1; j <= 16; j++) {
 var g = 0;
 while (g < arrayRandomNumber.length && trovato == false) {
   var position = arrayRandomNumber[i];
-  if (userNumbers = position) {
-    trovato = false;
+  if (userNumbers != position) {
+    findNumber = true;
     console.log('Hai perso');
   } else {
-    trovato = true;
     console.log('Hai vinto');
   }
   g++
